@@ -7,7 +7,7 @@ import {dirsearch} from '../models';
 import {context} from '../models';
 import {space} from '../models';
 
-export function AnalyzeAPI(arg1:string,arg2:string,arg3:Array<string>,arg4:{[key: string]: string},arg5:{[key: string]: string},arg6:Array<string>,arg7:Array<string>):Promise<void>;
+export function AnalyzeAPI(arg1:string,arg2:string,arg3:Array<string>,arg4:Record<string, string>,arg5:Record<string, string>,arg6:Array<string>,arg7:Array<string>):Promise<void>;
 
 export function Callgologger(arg1:string,arg2:string):Promise<void>;
 
@@ -31,11 +31,11 @@ export function FofaSearch(arg1:string,arg2:string,arg3:string,arg4:string,arg5:
 
 export function FofaTips(arg1:string):Promise<structs.TipsResult>;
 
-export function GetFingerPocMap():Promise<{[key: string]: Array<string>}>;
+export function GetFingerPocMap():Promise<Record<string, Array<string>>>;
 
 export function GitDorks(arg1:string,arg2:string,arg3:string):Promise<isic.GithubResult>;
 
-export function GoFetch(arg1:string,arg2:string,arg3:any,arg4:{[key: string]: string},arg5:number,arg6:clients.Proxy):Promise<structs.Response>;
+export function GoFetch(arg1:string,arg2:string,arg3:any,arg4:Record<string, string>,arg5:number,arg6:clients.Proxy):Promise<structs.Response>;
 
 export function HostAlive(arg1:Array<string>,arg2:boolean):Promise<Array<string>>;
 
